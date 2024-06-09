@@ -990,7 +990,7 @@ canvas {
   left: 26%;
 }
 
-@media (width: 320px) {
+@media (min-width: 320px) and (max-width:768px) {
   #nokey {
     width: 100%;
     height: 130vh;
