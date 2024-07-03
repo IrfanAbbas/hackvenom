@@ -3,7 +3,7 @@ import Eathical from './EathiCal';
 import HandTouch from './HandTouch';
 import CyberSecurity from './CyberSecurity';
 import Form from './Form';
-import AnimatedCanvas from './AnimatedCanvas';
+// import AnimatedCanvas from './AnimatedCanvas';
 
 export default function Home() {
 
@@ -18,7 +18,7 @@ export default function Home() {
         </div>
 
       </div>
-      <AnimatedCanvas />
+      {/* <AnimatedCanvas /> */}
       <Eathical />
       <HandTouch />
       <CyberSecurity />

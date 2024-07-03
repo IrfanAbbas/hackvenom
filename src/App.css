@@ -201,6 +201,7 @@ nav ul li a:hover {
   width: 100%;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
+  display: none;
 }
 .linux-img {
   width: 100%;
@@ -218,18 +219,18 @@ nav ul li a:hover {
   height: 150px;
   margin-top: 20px;
   background-color: rgb(28, 27, 27);
-  margin: 5px;
+  margin: 10px;
   transition: transform 0.6s ease-in-out;
   border-bottom: 2px solid rgb(219, 213, 213);
   box-shadow: 2px 2px 2px 2px rgba(255, 255, 255, 0.5);
-  clip-path: polygon(
+  /* clip-path: polygon(
     25% 0%,
-    /* Top-left */ 75% 0%,
-    /* Top-right */ 100% 50%,
-    /* Right-middle */ 75% 100%,
-    /* Bottom-right */ 25% 100%,
-    /* Bottom-left */ 0% 50% /* Left-middle */
-  );
+     75% 0%,
+     100% 50%,
+     75% 100%,
+     25% 100%,
+     0% 50% 
+  ); */
 }
 .card:hover {
   border-bottom: 2px solid rgb(243, 81, 81);
@@ -241,9 +242,15 @@ nav ul li a:hover {
 }
 .left-card {
   margin-top: 177px;
-  margin-left: 160px;
+  margin-left: 10px;
+  /* width: 50%; */
+
+
   /* border: 2px solid red; */
-  position: absolute;
+  /* position: absolute; */
+}
+.left-card-con{
+  margin-right: 10px;
 }
 .left-card p {
   color: #fff;
@@ -251,7 +258,7 @@ nav ul li a:hover {
 .right-card {
   margin-top: 100px;
   /* margin-left: 240px; */
-  position: absolute;
+  /* position: absolute; */
   right: 0;
   margin-right: 150px;
 }
@@ -653,12 +660,13 @@ canvas {
 
 @media (min-width: 320px) and (max-width: 768px) {
   .left-card {
-    margin-left: 10px;
+    margin-left: 5px;
     margin-top: 140px;
   }
   .right-card {
     margin-top: 88px;
-    margin-right: 23px;
+    margin-left: 2px;
+    
   }
   .card {
     width: 150px;
@@ -776,10 +784,13 @@ canvas {
 
 @media (width: 320px) {
   .left-card {
-    margin-left: 10px;
+    margin-left: 2px;
   }
   .img {
     margin-top: 160%;
+  }
+  .right-card{
+    margin-left: 2px;
   }
 }
 
@@ -788,10 +799,10 @@ canvas {
     margin-left: 100px;
   }
   .left-card {
-    margin-left: 50px;
+    margin-left: 10px;
   }
   .right-card {
-    margin-right: 36px;
+    margin-left: 0px;
   }
   .img {
     margin-top: 150%;
@@ -841,11 +852,10 @@ canvas {
     height: 150px;
   }
   .left-card {
-    margin-left: 185px;
+    margin-left: 15px;
     margin-top: 75px;
   }
   .right-card {
-    margin-right: 200px;
     margin-top: 0px;
   }
   .img {
@@ -873,11 +883,10 @@ canvas {
     font-size: 40px;
   }
   .left-card {
-    margin-left: 80px;
+    margin-left: 10px;
     margin-top: 80px;
   }
   .right-card {
-    margin-right: 60px;
     margin-top: 0px;
   }
   .Second-container {
@@ -907,11 +916,9 @@ canvas {
     margin-left: 100px;
   }
   .left-card {
-    margin-left: 220px;
+    margin-left: 20px;
   }
-  .right-card {
-    margin-right: 220px;
-  }
+  
   .sec-text {
     margin-left: 100px;
   }
@@ -928,11 +935,9 @@ canvas {
     font-size: 40px;
   }
   .left-card {
-    margin-left: 70px;
+    margin-left: 10px;
   }
-  .right-card {
-    margin-right: 55px;
-  }
+ 
   .img {
     margin-top: 90%;
     margin-left: 0px;
@@ -944,7 +949,7 @@ canvas {
 
 @media (width: 1440px) {
   .left-card {
-    margin-left: 200px;
+    margin-left: 20px;
   }
   .Second-container {
     height: 150vh;

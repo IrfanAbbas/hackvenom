@@ -15,11 +15,11 @@ export default function EathiCal() {
         <h1>EATHICAL HACKING</h1>
             <div className="left-card">
          
-            <div className="card" onClick={clickme}>   
+            <div className="card left-card-con" onClick={clickme}>   
             <img src="/img/linux.png" alt=""className="linux-img" />
                 <p>Eathical hacking</p>
             </div>
-            <div className="card" onClick={clickme}>  
+            <div className="card  left-card-con" onClick={clickme}>  
             <img src="/img/shiled.png" alt=""className="linux-img" />
                 <p>WebDev</p>
             </div>
